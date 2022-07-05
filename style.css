@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.main-header{
+    background-color: #2ddf5c;
+    width: 100%;
+    padding: 15px 10px ;
+    position: relative;
+    top: 0;
+    z-index: index 2; 
+}
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.brand_logo{
+    text-decoration: none;
+    color: #0e4f1f;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.main-nav{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 116px)
+}
+
+.main-nav-links{
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.main-nav-link{
+    display: inline-block;
+    margin: 0 16px;
+    
+}
+
+.main-nav-link > a{
+    text-decoration: none;
+    color: #0e4f1f;
+}
+.main-nav-link-cta > a{
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 16px;
+    
+}
+.main-nav-link > a:hover{
+    color: #ffffff;
+    border-bottom: 2px #ffffff solid;
+}
+.main-nav-link-cta > a:hover{
+    color: red;
+    background-color: #ffffff;
+    border: none;
+}
+.main-nav-link-cta{
+    animation: wiggle 200ms ease-in-out 3s 8 alternate ;
+}
+
+
+.overview{
+    background-color: rgba(255, 41, 41, 0.7);
+    height: 780px;
+    color: #ffffff;
+    padding: 28px ;
+    background-image:url(logibiz1.jpg)  ;
+    background-size: 100%;
+    
+    
+}
+.overview > h1{
+    font-weight: bolder;
+}
+
+.plans-title{
+    color: #0e4f1f;
+    text-align: center;
+    font-size: 32px;
+}
+
+.plans{
+    width: 100%;
+    text-align: center;
+}
+.plan{
+  display: inline-block;
+  width: 30%;
+  background-color: #d5ffdc;
+  padding: 16px;
+  margin: 8px;
+}
+.plan-title{
+    color: #0e4f1f;
+    
+}
+.plan-highlighted{
+    background-color: #19b84c;
+    color: #ffffff;
+    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan-highlighted > .plan-title{
+    color: #ffffff;
+}
+
+.plan-features{
+    list-style: none;
+    padding: 0;
+}
+
+.plan-features li{
+    margin: 8px 0;}
+
+    
+.recommended{
+    text-transform: uppercase;
+    color: #19b84c;
+    background-color: #ffffff;
+    border-radius:8px ;
+    padding: 8px;
+    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.5);
+}
+button{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #0e4f1f;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+    border: 2px solid;
+}
+
+button:hover{
+    color: #0e4f1f;
+    background-color: #ffffff;
+}
+.main-footer{
+    background-color: rgba(255, 41, 41, 0.7);
+}
+
+.key-feature{
+    display: inline-block;
+    margin: 7px;
+    color: #ffffff;
+    width:30% ;
+    padding: 8px ;
+    text-align: center;
+    
+}
+.key-features-title{
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.key-feature img {
+    width: 30%;
+    
+}
+
+.key-feature p {
+    font-size: 22px;
+    color: white;
+}
+
+@media (max-width: 600px), (min-width:600px) and (max-width) {
+    .main-nav ul{
+        display: none;
+    }
+}
+
+@keyframes wiggle{
+ from{
+     transform: rotateZ(0);
+ 
+ transform: rotateZ(10deg)
+ }
+}
